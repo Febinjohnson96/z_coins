@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:z_coins/config/app_theme.dart';
 import 'package:z_coins/config/routes.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -20,10 +21,7 @@ class MyApp extends StatelessWidget {
           routeInformationParser: router.routeInformationParser,
           routeInformationProvider: router.routeInformationProvider,
           routerDelegate: router.routerDelegate,
-          theme: ThemeData(
-            colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-            useMaterial3: true,
-          ),
+          theme: AppTheme.appTheme,
         );
       },
     );
