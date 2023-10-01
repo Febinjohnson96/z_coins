@@ -1,16 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:z_coins/config/app_colors.dart';
+import 'package:z_coins/config/app_typography.dart';
 import 'package:z_coins/extentions/app_color_extention.dart';
+import 'package:z_coins/extentions/app_text_extention.dart';
 
 class AppTheme {
   static final light = ThemeData.light().copyWith(
     extensions: [
       _lightAppColors,
+      _appTextTheme,
     ],
   );
   static final _lightAppColors =
       AppColorExtention(primary: AppColors.primaryColor);
+
+  static final _appTextTheme =
+      AppTextExtention(zCTextFontSize12: AppTypoGraphy.zCTextFontSize12);
   static final appTheme = ThemeData(
       useMaterial3: true,
       fontFamily: 'Gotham',
@@ -79,6 +85,8 @@ class AppTheme {
 extension AppThemeExtension on ThemeData {
   AppColorExtention get appColors =>
       extension<AppColorExtention>() ?? AppTheme._lightAppColors;
+  AppTextExtention get appTextTheme =>
+      extension<AppTextExtention>() ?? AppTheme._appTextTheme;
 }
 
 extension ThemeGetter on BuildContext {

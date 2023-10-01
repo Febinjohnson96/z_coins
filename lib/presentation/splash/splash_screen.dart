@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:z_coins/config/app_theme.dart';
 import 'package:z_coins/config/constants.dart';
 import 'package:z_coins/gen/assets.gen.dart';
 import 'package:z_coins/widgets/app_scaffold.dart';
@@ -26,7 +27,7 @@ class SplashScreen extends StatelessWidget {
         Align(
           alignment: Alignment.bottomCenter,
           child: Text(splashscreenText,
-          style: Theme.of(context).textTheme.bodySmall,
+          style: context.theme.appTextTheme.zCTextFontSize12,
           ),
         ),
       ],
