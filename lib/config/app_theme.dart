@@ -1,7 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:z_coins/config/app_colors.dart';
+import 'package:z_coins/extentions/app_color_extention.dart';
 
 class AppTheme {
+  static final light = ThemeData.light().copyWith(
+    extensions: [
+      _lightAppColors,
+    ],
+  );
+  static final _lightAppColors =
+      AppColorExtention(primary: AppColors.primaryColor);
   static final appTheme = ThemeData(
       useMaterial3: true,
       fontFamily: 'Gotham',
@@ -65,4 +74,14 @@ class AppTheme {
                   // color: buttonColor
                   ),
               borderRadius: BorderRadius.circular(12))));
+}
+
+extension AppThemeExtension on ThemeData {
+  AppColorExtention get appColors =>
+      extension<AppColorExtention>() ?? AppTheme._lightAppColors;
+}
+
+extension ThemeGetter on BuildContext {
+  // Usage example: `context.theme`
+  ThemeData get theme => Theme.of(this);
 }
