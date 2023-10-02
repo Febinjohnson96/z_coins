@@ -12,8 +12,37 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  $AssetsImagesBannerGen get banner => const $AssetsImagesBannerGen();
   $AssetsImagesSplashScreenGen get splashScreen =>
       const $AssetsImagesSplashScreenGen();
+}
+
+class $AssetsImagesBannerGen {
+  const $AssetsImagesBannerGen();
+
+  /// File path: assets/images/banner/beginner_banner.png
+  AssetGenImage get beginnerBanner =>
+      const AssetGenImage('assets/images/banner/beginner_banner.png');
+
+  /// File path: assets/images/banner/fortune_banner.png
+  AssetGenImage get fortuneBanner =>
+      const AssetGenImage('assets/images/banner/fortune_banner.png');
+
+  /// File path: assets/images/banner/like_refer.png
+  AssetGenImage get likeRefer =>
+      const AssetGenImage('assets/images/banner/like_refer.png');
+
+  /// File path: assets/images/banner/referral_banner.png
+  AssetGenImage get referralBanner =>
+      const AssetGenImage('assets/images/banner/referral_banner.png');
+
+  /// File path: assets/images/banner/welcome_banner.png
+  AssetGenImage get welcomeBanner =>
+      const AssetGenImage('assets/images/banner/welcome_banner.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [beginnerBanner, fortuneBanner, likeRefer, referralBanner, welcomeBanner];
 }
 
 class $AssetsImagesSplashScreenGen {
