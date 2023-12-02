@@ -10,6 +10,9 @@
 class FontFamily {
   FontFamily._();
 
+  /// Font family: Circular std
+  static const String circularStd = 'Circular std';
+
   /// Font family: Gotham
   static const String gotham = 'Gotham';
 }

@@ -12,11 +12,21 @@ class AppTheme {
       _appTextTheme,
     ],
   );
-  static final _lightAppColors =
-      AppColorExtention(primary: AppColors.primaryColor);
+  static final _lightAppColors = AppColorExtention(
+    primary: AppColors.primaryColor,
+    white: AppColors.white,
+    bannerButtonColor: AppColors.bannerButtonColor,
+    secondary: AppColors.secondary,
+    tertiary: AppColors.tertiary,
+    quaternary: AppColors.quaternary,
+  );
 
-  static final _appTextTheme =
-      AppTextExtention(zCTextFontSize12: AppTypoGraphy.zCTextFontSize12);
+  static final _appTextTheme = AppTextExtention(
+    zCTextFontSize12: AppTypoGraphy.zCTextFontSize12,
+    zCTextFontSize18: AppTypoGraphy.zCTextFontSize18,
+    zCTextFontSize14: AppTypoGraphy.zCTextFontSize14,
+    zCTextFontSize16: AppTypoGraphy.zCTextFontSize16,
+  );
   static final appTheme = ThemeData(
       useMaterial3: true,
       fontFamily: 'Gotham',
