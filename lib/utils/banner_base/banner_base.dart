@@ -5,18 +5,21 @@ import 'package:z_coins/gen/fonts.gen.dart';
 import 'package:z_coins/widgets/button/banner_button.dart';
 
 class BannerBaseClass extends StatelessWidget {
-  const BannerBaseClass({super.key, required this.bannerTitle, required this.bannerSubTitle, required this.imagePath, required this.btnTitle, this.callback, required this.bannerColor});
+  const BannerBaseClass({super.key, required this.bannerTitle, required this.bannerSubTitle, required this.imagePath, required this.btnTitle, this.callback, required this.bannerColor, required this.height, required this.width, required this.btnColor});
 final String bannerTitle;
 final String bannerSubTitle;
 final String imagePath;
 final String btnTitle;
 final VoidCallback? callback;
 final Color bannerColor;
+final Color btnColor;
+final int height;
+final int width;
   @override
   Widget build(BuildContext context) {
         return Container(
-      height: 141.h,
-      width: 343.w,
+      height: height.h,
+      width: width.w,
       decoration: BoxDecoration(
           color: bannerColor ,
           borderRadius: BorderRadius.circular(12)),
@@ -52,7 +55,7 @@ final Color bannerColor;
                 BannerButton(
                   callback: callback,
                     btnTitle: btnTitle,
-                    btnTitleColor: context.theme.appColors.primary),
+                    btnTitleColor: btnColor),
               ],
             ),
             Flexible(

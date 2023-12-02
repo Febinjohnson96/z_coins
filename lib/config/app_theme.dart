@@ -16,6 +16,9 @@ class AppTheme {
     primary: AppColors.primaryColor,
     white: AppColors.white,
     bannerButtonColor: AppColors.bannerButtonColor,
+    secondary: AppColors.secondary,
+    tertiary: AppColors.tertiary,
+    quaternary: AppColors.quaternary,
   );
 
   static final _appTextTheme = AppTextExtention(
