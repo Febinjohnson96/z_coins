@@ -7,7 +7,7 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const ZCScaffold(child: Column(
+    return  ZCScaffold(child: Column(
       children: [
         BeginnerGuideBanner()
       ],
