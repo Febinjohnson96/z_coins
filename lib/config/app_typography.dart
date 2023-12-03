@@ -13,9 +13,16 @@ abstract class AppTypoGraphy {
     fontSize: 16,
     fontWeight: FontWeight.w300,
   );
+    static const zCTextFontSizeBold16 = TextStyle(
+    fontSize: 16,
+    fontWeight: FontWeight.bold,
+    );
   static const zCTextFontSize18 = TextStyle(
     fontSize: 18,
     fontWeight: FontWeight.w300,
   );
-
+  static const zCTextFontSizeBold20 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.bold,
+  );
 }

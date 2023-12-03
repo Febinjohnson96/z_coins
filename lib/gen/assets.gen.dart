@@ -12,9 +12,57 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  $AssetsImagesCryptosGen get cryptos => const $AssetsImagesCryptosGen();
+  $AssetsImagesPandLGen get pandL => const $AssetsImagesPandLGen();
   $AssetsImagesBannerGen get banner => const $AssetsImagesBannerGen();
   $AssetsImagesSplashScreenGen get splashScreen =>
       const $AssetsImagesSplashScreenGen();
+}
+
+class $AssetsImagesCryptosGen {
+  const $AssetsImagesCryptosGen();
+
+  /// File path: assets/images/Cryptos/Band.png
+  AssetGenImage get band =>
+      const AssetGenImage('assets/images/Cryptos/Band.png');
+
+  /// File path: assets/images/Cryptos/Cardano.png
+  AssetGenImage get cardano =>
+      const AssetGenImage('assets/images/Cryptos/Cardano.png');
+
+  /// File path: assets/images/Cryptos/Ethereum.png
+  AssetGenImage get ethereum =>
+      const AssetGenImage('assets/images/Cryptos/Ethereum.png');
+
+  /// File path: assets/images/Cryptos/Tether.png
+  AssetGenImage get tether =>
+      const AssetGenImage('assets/images/Cryptos/Tether.png');
+
+  /// File path: assets/images/Cryptos/Tron.png
+  AssetGenImage get tron =>
+      const AssetGenImage('assets/images/Cryptos/Tron.png');
+
+  /// File path: assets/images/Cryptos/bitcoin.png
+  AssetGenImage get bitcoin =>
+      const AssetGenImage('assets/images/Cryptos/bitcoin.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [band, cardano, ethereum, tether, tron, bitcoin];
+}
+
+class $AssetsImagesPandLGen {
+  const $AssetsImagesPandLGen();
+
+  /// File path: assets/images/PandL/loss.png
+  AssetGenImage get loss => const AssetGenImage('assets/images/PandL/loss.png');
+
+  /// File path: assets/images/PandL/profit.png
+  AssetGenImage get profit =>
+      const AssetGenImage('assets/images/PandL/profit.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [loss, profit];
 }
 
 class $AssetsImagesBannerGen {
