@@ -19,13 +19,18 @@ class AppTheme {
     secondary: AppColors.secondary,
     tertiary: AppColors.tertiary,
     quaternary: AppColors.quaternary,
+    lossColor: AppColors.lossColor,
+    profitColor: AppColors.profitColor,
   );
 
   static final _appTextTheme = AppTextExtention(
+    zCTextFontSize10: AppTypoGraphy.zCTextFontSize10,
     zCTextFontSize12: AppTypoGraphy.zCTextFontSize12,
     zCTextFontSize18: AppTypoGraphy.zCTextFontSize18,
     zCTextFontSize14: AppTypoGraphy.zCTextFontSize14,
     zCTextFontSize16: AppTypoGraphy.zCTextFontSize16,
+    zCTextFontSizeBold16: AppTypoGraphy.zCTextFontSizeBold16,
+    zCTextFontSizeBold20: AppTypoGraphy.zCTextFontSizeBold20,
   );
   static final appTheme = ThemeData(
       useMaterial3: true,

@@ -12,9 +12,59 @@ import 'package:flutter/widgets.dart';
 class $AssetsImagesGen {
   const $AssetsImagesGen();
 
+  $AssetsImagesCryptosGen get cryptos => const $AssetsImagesCryptosGen();
+  $AssetsImagesPandLGen get pandL => const $AssetsImagesPandLGen();
   $AssetsImagesBannerGen get banner => const $AssetsImagesBannerGen();
+  $AssetsImagesBottomNavbarGen get bottomNavbar =>
+      const $AssetsImagesBottomNavbarGen();
   $AssetsImagesSplashScreenGen get splashScreen =>
       const $AssetsImagesSplashScreenGen();
+}
+
+class $AssetsImagesCryptosGen {
+  const $AssetsImagesCryptosGen();
+
+  /// File path: assets/images/Cryptos/Band.png
+  AssetGenImage get band =>
+      const AssetGenImage('assets/images/Cryptos/Band.png');
+
+  /// File path: assets/images/Cryptos/Cardano.png
+  AssetGenImage get cardano =>
+      const AssetGenImage('assets/images/Cryptos/Cardano.png');
+
+  /// File path: assets/images/Cryptos/Ethereum.png
+  AssetGenImage get ethereum =>
+      const AssetGenImage('assets/images/Cryptos/Ethereum.png');
+
+  /// File path: assets/images/Cryptos/Tether.png
+  AssetGenImage get tether =>
+      const AssetGenImage('assets/images/Cryptos/Tether.png');
+
+  /// File path: assets/images/Cryptos/Tron.png
+  AssetGenImage get tron =>
+      const AssetGenImage('assets/images/Cryptos/Tron.png');
+
+  /// File path: assets/images/Cryptos/bitcoin.png
+  AssetGenImage get bitcoin =>
+      const AssetGenImage('assets/images/Cryptos/bitcoin.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values =>
+      [band, cardano, ethereum, tether, tron, bitcoin];
+}
+
+class $AssetsImagesPandLGen {
+  const $AssetsImagesPandLGen();
+
+  /// File path: assets/images/PandL/loss.png
+  AssetGenImage get loss => const AssetGenImage('assets/images/PandL/loss.png');
+
+  /// File path: assets/images/PandL/profit.png
+  AssetGenImage get profit =>
+      const AssetGenImage('assets/images/PandL/profit.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [loss, profit];
 }
 
 class $AssetsImagesBannerGen {
@@ -43,6 +93,64 @@ class $AssetsImagesBannerGen {
   /// List of all assets
   List<AssetGenImage> get values =>
       [beginnerBanner, fortuneBanner, likeRefer, referralBanner, welcomeBanner];
+}
+
+class $AssetsImagesBottomNavbarGen {
+  const $AssetsImagesBottomNavbarGen();
+
+  /// File path: assets/images/bottom_navbar/active_home.png
+  AssetGenImage get activeHome =>
+      const AssetGenImage('assets/images/bottom_navbar/active_home.png');
+
+  /// File path: assets/images/bottom_navbar/active_market.png
+  AssetGenImage get activeMarket =>
+      const AssetGenImage('assets/images/bottom_navbar/active_market.png');
+
+  /// File path: assets/images/bottom_navbar/active_portfolio.png
+  AssetGenImage get activePortfolio =>
+      const AssetGenImage('assets/images/bottom_navbar/active_portfolio.png');
+
+  /// File path: assets/images/bottom_navbar/active_profile.png
+  AssetGenImage get activeProfile =>
+      const AssetGenImage('assets/images/bottom_navbar/active_profile.png');
+
+  /// File path: assets/images/bottom_navbar/active_rewards.png
+  AssetGenImage get activeRewards =>
+      const AssetGenImage('assets/images/bottom_navbar/active_rewards.png');
+
+  /// File path: assets/images/bottom_navbar/inacive_profile.png
+  AssetGenImage get inaciveProfile =>
+      const AssetGenImage('assets/images/bottom_navbar/inacive_profile.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_home.png
+  AssetGenImage get inactiveHome =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_home.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_market.png
+  AssetGenImage get inactiveMarket =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_market.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_portfolio.png
+  AssetGenImage get inactivePortfolio =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_portfolio.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_rewards.png
+  AssetGenImage get inactiveRewards =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_rewards.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+        activeHome,
+        activeMarket,
+        activePortfolio,
+        activeProfile,
+        activeRewards,
+        inaciveProfile,
+        inactiveHome,
+        inactiveMarket,
+        inactivePortfolio,
+        inactiveRewards
+      ];
 }
 
 class $AssetsImagesSplashScreenGen {

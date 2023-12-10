@@ -7,4 +7,6 @@ abstract class AppColors {
   static const secondary = Color(0XFFF59300);
   static const tertiary = Color(0XFF9300F5);
   static const quaternary = Color(0XFFED5565);
+  static const lossColor = Color(0XFFD90429);
+  static const profitColor = Color(0XFF21BF73);
 }
