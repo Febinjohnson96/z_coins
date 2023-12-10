@@ -24,6 +24,7 @@ class AppTheme {
   );
 
   static final _appTextTheme = AppTextExtention(
+    zCTextFontSize10: AppTypoGraphy.zCTextFontSize10,
     zCTextFontSize12: AppTypoGraphy.zCTextFontSize12,
     zCTextFontSize18: AppTypoGraphy.zCTextFontSize18,
     zCTextFontSize14: AppTypoGraphy.zCTextFontSize14,

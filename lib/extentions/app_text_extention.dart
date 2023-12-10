@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppTextExtention extends ThemeExtension<AppTextExtention> {
   AppTextExtention({
+    required this.zCTextFontSize10,
     required this.zCTextFontSize12,
     required this.zCTextFontSize18,
     required this.zCTextFontSize14,
@@ -10,6 +11,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
     required this.zCTextFontSizeBold16,
   });
 
+  final TextStyle zCTextFontSize10;
   final TextStyle zCTextFontSize12;
   final TextStyle zCTextFontSize14;
   final TextStyle zCTextFontSize16;
@@ -18,6 +20,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
   final TextStyle zCTextFontSizeBold20;
   @override
   ThemeExtension<AppTextExtention> copyWith({
+    TextStyle? zCTextFontSize10,
     TextStyle? zCTextFontSize12,
     TextStyle? zCTextFontSize14,
     TextStyle? zCTextFontSize16,
@@ -26,6 +29,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
     TextStyle? zCTextFontSizeBold20,
   }) {
     return AppTextExtention(
+      zCTextFontSize10: zCTextFontSize10 ?? this.zCTextFontSize10,
       zCTextFontSize12: zCTextFontSize12 ?? this.zCTextFontSize12,
       zCTextFontSize14: zCTextFontSize14 ?? this.zCTextFontSize14,
       zCTextFontSize16: zCTextFontSize16 ?? this.zCTextFontSize16,
@@ -42,6 +46,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
       return this;
     }
     return AppTextExtention(
+      zCTextFontSize10: TextStyle.lerp(zCTextFontSize10, other.zCTextFontSize10, t)!,
       zCTextFontSize12:
           TextStyle.lerp(zCTextFontSize12, other.zCTextFontSize12, t)!,
       zCTextFontSize18:

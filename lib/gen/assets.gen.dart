@@ -15,6 +15,8 @@ class $AssetsImagesGen {
   $AssetsImagesCryptosGen get cryptos => const $AssetsImagesCryptosGen();
   $AssetsImagesPandLGen get pandL => const $AssetsImagesPandLGen();
   $AssetsImagesBannerGen get banner => const $AssetsImagesBannerGen();
+  $AssetsImagesBottomNavbarGen get bottomNavbar =>
+      const $AssetsImagesBottomNavbarGen();
   $AssetsImagesSplashScreenGen get splashScreen =>
       const $AssetsImagesSplashScreenGen();
 }
@@ -91,6 +93,64 @@ class $AssetsImagesBannerGen {
   /// List of all assets
   List<AssetGenImage> get values =>
       [beginnerBanner, fortuneBanner, likeRefer, referralBanner, welcomeBanner];
+}
+
+class $AssetsImagesBottomNavbarGen {
+  const $AssetsImagesBottomNavbarGen();
+
+  /// File path: assets/images/bottom_navbar/active_home.png
+  AssetGenImage get activeHome =>
+      const AssetGenImage('assets/images/bottom_navbar/active_home.png');
+
+  /// File path: assets/images/bottom_navbar/active_market.png
+  AssetGenImage get activeMarket =>
+      const AssetGenImage('assets/images/bottom_navbar/active_market.png');
+
+  /// File path: assets/images/bottom_navbar/active_portfolio.png
+  AssetGenImage get activePortfolio =>
+      const AssetGenImage('assets/images/bottom_navbar/active_portfolio.png');
+
+  /// File path: assets/images/bottom_navbar/active_profile.png
+  AssetGenImage get activeProfile =>
+      const AssetGenImage('assets/images/bottom_navbar/active_profile.png');
+
+  /// File path: assets/images/bottom_navbar/active_rewards.png
+  AssetGenImage get activeRewards =>
+      const AssetGenImage('assets/images/bottom_navbar/active_rewards.png');
+
+  /// File path: assets/images/bottom_navbar/inacive_profile.png
+  AssetGenImage get inaciveProfile =>
+      const AssetGenImage('assets/images/bottom_navbar/inacive_profile.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_home.png
+  AssetGenImage get inactiveHome =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_home.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_market.png
+  AssetGenImage get inactiveMarket =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_market.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_portfolio.png
+  AssetGenImage get inactivePortfolio =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_portfolio.png');
+
+  /// File path: assets/images/bottom_navbar/inactive_rewards.png
+  AssetGenImage get inactiveRewards =>
+      const AssetGenImage('assets/images/bottom_navbar/inactive_rewards.png');
+
+  /// List of all assets
+  List<AssetGenImage> get values => [
+        activeHome,
+        activeMarket,
+        activePortfolio,
+        activeProfile,
+        activeRewards,
+        inaciveProfile,
+        inactiveHome,
+        inactiveMarket,
+        inactivePortfolio,
+        inactiveRewards
+      ];
 }
 
 class $AssetsImagesSplashScreenGen {
