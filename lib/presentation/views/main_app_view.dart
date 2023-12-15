@@ -31,8 +31,8 @@ class _MainAppViewState extends State<MainAppView> {
 
 List<Widget> mainAppScreens = [
   const HomeScreen(),
-  const RewardsScreen(),
   const PortFolioScreen(),
+  const RewardsScreen(),
   const MarketScreen(),
   const ProfileScreen(),
 ];

@@ -9,6 +9,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
     required this.zCTextFontSize16,
     required this.zCTextFontSizeBold20,
     required this.zCTextFontSizeBold16,
+    required this.zCTextFontSizeBold28,
   });
 
   final TextStyle zCTextFontSize10;
@@ -18,6 +19,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
   final TextStyle zCTextFontSizeBold16;
   final TextStyle zCTextFontSize18;
   final TextStyle zCTextFontSizeBold20;
+  final TextStyle zCTextFontSizeBold28;
   @override
   ThemeExtension<AppTextExtention> copyWith({
     TextStyle? zCTextFontSize10,
@@ -27,6 +29,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
     TextStyle? zCTextFontSizeBold16,
     TextStyle? zCTextFontSize18,
     TextStyle? zCTextFontSizeBold20,
+    TextStyle? zCTextFontSizeBold28,
   }) {
     return AppTextExtention(
       zCTextFontSize10: zCTextFontSize10 ?? this.zCTextFontSize10,
@@ -36,6 +39,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
       zCTextFontSizeBold16: zCTextFontSizeBold16 ?? this.zCTextFontSizeBold16,
       zCTextFontSize18: zCTextFontSize18 ?? this.zCTextFontSize18,
       zCTextFontSizeBold20: zCTextFontSizeBold20 ?? this.zCTextFontSizeBold20,
+      zCTextFontSizeBold28: zCTextFontSizeBold28 ?? this.zCTextFontSizeBold28,
     );
   }
 
@@ -59,6 +63,7 @@ class AppTextExtention extends ThemeExtension<AppTextExtention> {
           TextStyle.lerp(zCTextFontSizeBold16, other.zCTextFontSizeBold16, t)!,
       zCTextFontSizeBold20:
           TextStyle.lerp(zCTextFontSizeBold20, other.zCTextFontSizeBold20, t)!,
+      zCTextFontSizeBold28: TextStyle.lerp(zCTextFontSizeBold28, other.zCTextFontSizeBold28, t)!,
     );
   }
 }

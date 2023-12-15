@@ -31,6 +31,7 @@ class AppTheme {
     zCTextFontSize16: AppTypoGraphy.zCTextFontSize16,
     zCTextFontSizeBold16: AppTypoGraphy.zCTextFontSizeBold16,
     zCTextFontSizeBold20: AppTypoGraphy.zCTextFontSizeBold20,
+    zCTextFontSizeBold28: AppTypoGraphy.zCTextFontSizeBold28,
   );
   static final appTheme = ThemeData(
       useMaterial3: true,
