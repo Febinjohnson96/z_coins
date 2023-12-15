@@ -29,4 +29,8 @@ abstract class AppTypoGraphy {
     fontSize: 20,
     fontWeight: FontWeight.bold,
   );
+  static const zCTextFontSizeBold28 = TextStyle(
+    fontSize: 28,
+    fontWeight: FontWeight.bold,
+  );
 }
