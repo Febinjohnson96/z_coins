@@ -10,6 +10,7 @@ class AppColorExtention extends ThemeExtension<AppColorExtention> {
     required this.quaternary,
     required this.lossColor,
     required this.profitColor,
+    required this.textGreyColor,
   });
 
   final Color primary;
@@ -20,6 +21,7 @@ class AppColorExtention extends ThemeExtension<AppColorExtention> {
   final Color quaternary;
   final Color lossColor ;
   final Color profitColor;
+  final Color textGreyColor;
 
   @override
   ThemeExtension<AppColorExtention> copyWith({
@@ -31,6 +33,7 @@ class AppColorExtention extends ThemeExtension<AppColorExtention> {
     Color? quaternary,
     Color? lossColor,
     Color? profitColor,
+    Color? textGreyColor,
   }) {
     return AppColorExtention(
       primary: primary ?? this.primary,
@@ -41,6 +44,7 @@ class AppColorExtention extends ThemeExtension<AppColorExtention> {
       quaternary: quaternary ?? this.quaternary,
       lossColor: lossColor ?? this.lossColor,
       profitColor: profitColor ?? this.profitColor, 
+      textGreyColor: textGreyColor ?? this.textGreyColor,
     );
   }
 
@@ -60,6 +64,7 @@ class AppColorExtention extends ThemeExtension<AppColorExtention> {
       quaternary: Color.lerp(quaternary, other.quaternary, t)!,
       lossColor: Color.lerp(lossColor, other.lossColor, t)!,
       profitColor: Color.lerp(profitColor, other.profitColor, t)!,
+      textGreyColor: Color.lerp(textGreyColor, other.textGreyColor, t)!,
     );
   }
 }
