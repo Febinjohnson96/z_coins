@@ -21,6 +21,7 @@ class AppTheme {
     quaternary: AppColors.quaternary,
     lossColor: AppColors.lossColor,
     profitColor: AppColors.profitColor,
+    textGreyColor: AppColors.textGreyColor,
   );
 
   static final _appTextTheme = AppTextExtention(
